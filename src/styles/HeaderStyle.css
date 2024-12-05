@@ -1,0 +1,42 @@
+header .navbar {
+    position: absolute;
+    width: 100%;
+    background-color: transparent !important;
+    z-index: 1000;
+}
+header .navbar.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--white);
+    transition: all 15ms ease-in-out;
+    animation-name: sticky-anim;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    box-shadow: 0 2px 3px rgba(96, 96, 96, 0.1);
+}
+
+@keyframes sticky-anim {
+    0% {
+        opacity: 0;
+        transform: translate3d(1, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+header .logo img {
+    width: auto;
+    max-height: 80px;
+}
+
+header .nav-link {
+    display: inline-flex;
+    justify-content: center;
+    color: var(--yellow);
+    padding: 0 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: var(--oswald-font);
+}
