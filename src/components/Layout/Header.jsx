@@ -4,11 +4,31 @@ import Navbar from "react-bootstrap/Navbar";
 import "../../styles/HeaderStyle.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+    const [nav, setNav] = useState(false);
+
+    const handleScroll = () => {
+        if (document.documentElement.scrollTop > 100) {
+            setNav(true);
+        } else {
+            setNav(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
         <header>
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+            <Navbar
+                collapseOnSelect
+                expand="lg"
+                className={nav === true ? "sticky" : ""}
+            >
                 <Container>
                     <Navbar.Brand href="#home">
                         <Link className="logo">
@@ -37,8 +57,10 @@ const Header = () => {
                                 Contact
                             </Nav.Link>
                             <Nav.Link as={Link} to={"/contact"}>
-                                <i className="bi bi-bag"></i>
-                                <em>2</em>
+                                <div className="cart">
+                                    <i className="bi bi-bag"></i>
+                                    <em className="round">2</em>
+                                </div>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

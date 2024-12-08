@@ -1,0 +1,399 @@
+.hero-section {
+    background: url("../assets/hero/hero-1.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 170px;
+    padding-bottom: 90px;
+}
+.hero-section .price-badge {
+    background: url("../assets/hero/price-badge-yellow.png") no-repeat center
+        center;
+    background-size: cover;
+    position: absolute;
+    top: -20px;
+    right: 5px;
+    width: 180px;
+    height: 176px;
+    text-align: center;
+}
+.hero-section .badge-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hero-section .badge-text .h4_xs {
+    font-size: 1.874rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.hero-section .badge-text .h3_lg {
+    font-size: 2.874rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-section .hero-text h1 {
+    font-family: var(--lilita-font);
+    font-size: 7rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+.hero-section .hero-text h2 {
+    font-family: var(--lilita-font);
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.hero-section .hero-text p {
+    padding: 0 5%;
+}
+
+/* Hero-section-2 */
+.about-section {
+    padding-top: 80px;
+    padding-bottom: 300px;
+    background: url("../assets/about/about-1.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+.about-section h2 {
+    font-size: 3.5rem;
+}
+.about-section p {
+    color: var(--grey);
+    padding: 20px 30px;
+    font-size: 19px;
+}
+
+.about-wrapper {
+    width: 100%;
+    background: var(--yellow);
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.about-box .about-img img {
+    max-width: 25%;
+}
+.about-box h4 {
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0.5008px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.about-box p {
+    padding: 0 20px;
+}
+
+/* FoodCard  */
+
+.menu-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.menu-section .card-img-top {
+    transition: all 500ms ease-in-out;
+}
+
+.menu-section h1 {
+    font-size: 3.5rem;
+    color: var(--light-red);
+}
+.menu-section #para {
+    color: var(--grey);
+    padding: 10px 100px;
+    font-size: 19px;
+}
+
+.menu-section .ratting i {
+    color: var(--yellow);
+    padding-right: 5px;
+}
+.menu-section .wishlist i {
+    color: var(--grey);
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu-section .wishlist i:hover {
+    color: var(--light-red);
+}
+
+.menu-section .card-title {
+    font-family: var(--oswald-font);
+    font-weight: 600px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.menu-section .card-text {
+    color: var(--grey);
+    font-size: 15px;
+}
+
+.menu-section .menu-price {
+    background-color: var(--bg-coffee);
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 4px;
+}
+.menu-section .menu-price h5 {
+    color: var(--yellow);
+    font-size: 1rem;
+}
+
+.menu-section .add-cart-btn a {
+    background: var(--yellow);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 4px;
+    opacity: 1;
+    transform: translateY(100px);
+    transition: all 500ms ease-in-out;
+}
+.menu-section .card {
+    z-index: 1000;
+}
+.menu-section .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+.menu-section .card:hover .add-cart-btn a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.menu-section .ads_box {
+    text-align: right;
+    padding: 80px 35px 50px;
+    border-radius: 6px;
+}
+.menu-section .ads-img1 {
+    background: url("../assets//menu/ads-1.jpg") no-repeat center center;
+    background-size: cover;
+}
+.menu-section .ads-img2 {
+    background: url("../assets//menu/ads-2.jpg") no-repeat center center;
+    background-size: cover;
+}
+.menu-section .ads_box h4 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--brown);
+}
+.menu-section .ads_box h5 {
+    font-size: 2.3rem;
+
+    color: var(--brown);
+}
+
+.menu-section .ads_box a {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Home-Promotion-Section */
+.promotion-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--light-grey);
+}
+
+.promotion-section h2 {
+    font-size: 3.35rem;
+    margin-bottom: 25px;
+}
+.promotion-section p {
+    font-size: 1.25rem;
+}
+.promotion-section ul {
+    padding-left: 15px;
+}
+
+.bg-paralax {
+    background: url("../assets/parallax/bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+}
+
+/* Home-shop */
+.home-shop {
+    padding: 100px 0 0;
+    background: var(--yellow);
+}
+
+.home-shop h4 {
+    font-size: 2.375rem;
+    font-weight: 400;
+    color: var(--bg-coffee);
+}
+.home-shop h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+    color: var(--bg-coffee);
+}
+.home-shop p {
+    font-size: 1.25rem;
+    padding-right: 10%;
+    margin-bottom: 40px;
+    color: var(--bg-coffee);
+}
+
+.home-shop .store {
+    max-width: 40%;
+}
+.home-shop .e-shop {
+    text-align: center;
+}
+
+/* brand-section */
+
+.brand-section {
+    padding: 70px 0 40px;
+    background: var(--light-grey);
+    overflow: hidden;
+}
+.brand-section .brand-img {
+    width: 180px;
+    height: auto;
+}
+
+.carousel.slide .carousel-inner {
+    overflow: unset;
+}
+.carousel.slide .carousel-inner .carousel-caption {
+    position: relative;
+    right: unset;
+    left: unset;
+}
+
+/* blog-section */
+.blog-section {
+    padding: 80px 0 50px;
+    height: auto;
+    overflow: hidden;
+    background: url("../assets/blog/reviews.jpg") no-repeat center center;
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+.blog-section .user-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 25px;
+}
+
+.blog-section .carousel-inner .carousel-caption p {
+    font-size: 1.7rem;
+    line-height: 1.45;
+    font-weight: 400;
+    padding: 0 12%;
+    margin-bottom: 25px;
+}
+.blog-section .carousel-inner .carousel-caption i {
+    color: var(--yellow);
+    margin-right: 5px;
+}
+.blog-section .carousel-inner .carousel-caption h5 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+/* Contact */
+
+.contact-section {
+    background: url("../assets/footer/banner-1.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-section h4 {
+    font-size: 2.375rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.contact-section h2 {
+    font-size: 4.5rem;
+
+    margin-bottom: 25px;
+}
+.contact-section p {
+    width: 70%;
+    margin: 0 auto 30px;
+
+    margin-bottom: 25px;
+}
+
+.contact-section a {
+    font-size: 22px;
+}
+
+@media (max-width: 1200px) {
+    .promotion-section h2 {
+        font-size: 2.25rem;
+    }
+    .contact-section h2 {
+        font-size: 3rem;
+    }
+
+    .contact-section p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        padding: 20px 0px;
+        font-size: 12px;
+    }
+    .about-box p {
+        padding: 0;
+    }
+
+    .bg-paralax {
+        background-attachment: scroll;
+
+        height: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section .hero-text h1 {
+        font-size: 3rem;
+    }
+    .menu-section #para {
+        padding: 10px 0px;
+    }
+
+    .home-shop h4 {
+        font-size: 1.8rem;
+    }
+    .home-shop h2 {
+        font-size: 3.5rem;
+    }
+    .brand-section {
+        padding: 50px 0 10px;
+    }
+    .brand-section .brand-img {
+        width: 70px;
+        height: auto;
+    }
+    /* blog-section */
+    .blog-section .carousel-inner .carousel-caption p {
+        font-size: 1rem;
+    }
+}

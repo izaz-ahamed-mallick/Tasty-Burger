@@ -1,8 +1,8 @@
 header .navbar {
     position: absolute;
     width: 100%;
-    background-color: transparent !important;
-    z-index: 1000;
+    background-color: transparent;
+    z-index: 9999;
 }
 header .navbar.sticky {
     position: fixed;
@@ -19,7 +19,7 @@ header .navbar.sticky {
 @keyframes sticky-anim {
     0% {
         opacity: 0;
-        transform: translate3d(1, 100%, 0);
+        transform: translate3d(0, -100%, 0);
     }
     100% {
         opacity: 1;
@@ -28,15 +28,62 @@ header .navbar.sticky {
 }
 header .logo img {
     width: auto;
+    max-width: inherit;
     max-height: 80px;
 }
 
 header .nav-link {
     display: inline-flex;
     justify-content: center;
-    color: var(--yellow);
-    padding: 0 1rem;
+    color: var(--white);
+    padding: 0 1rem !important;
     font-size: 1.125rem;
     font-weight: 500;
     font-family: var(--oswald-font);
+    transition: all 15ms ease-in-out;
+}
+header .sticky .nav-link {
+    color: var(--light-black);
+}
+header .nav-link:hover {
+    color: var(--yellow);
+}
+
+header .cart {
+    position: relative !important;
+}
+header .cart .round {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: var(--light-red);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 11.2px;
+    line-height: 16px;
+    text-align: center;
+    font-style: normal;
+    top: 2px;
+    right: -8px;
+}
+
+@media (max-width: 992px) {
+    header .navbar {
+        background-color: var(--white) !important;
+    }
+    header .navbar-toggler {
+        border: none;
+    }
+    header .navbar-toggler-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    header .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    header .nav-link {
+        color: var(--light-black);
+        padding: 1rem !important;
+    }
 }

@@ -1,0 +1,88 @@
+footer {
+    padding-top: 80px;
+    position: relative;
+}
+footer h5 {
+    color: var(--light-black);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+footer p {
+    margin-bottom: 3px;
+    font-size: 1rem;
+}
+footer .calling {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--yellow);
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+footer .copy-right {
+    border-top: 1px solid var(--light-grey-2);
+    margin-top: 60px;
+    padding: 20px 0;
+}
+footer .copy-right ul li span {
+    color: var(--light-red);
+    font-weight: 600;
+}
+
+footer .copy-right ul li a {
+    color: var(--light-black);
+}
+footer .copy-right ul li a:hover {
+    color: var(--light-red);
+}
+footer .copy-right ul li {
+    font-size: 1rem;
+    padding: 0 10px;
+    position: relative;
+}
+footer .copy-right ul li:after {
+    content: "|";
+    padding-left: 10px;
+    position: absolute;
+    right: -10px;
+    top: -1px;
+}
+footer .copy-right ul li:last-child:after {
+    display: none;
+}
+
+.arrow-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 2.7rem;
+    height: 2.7rem;
+    line-height: 3rem;
+    border-radius: 100%;
+    background: var(--light-red);
+    color: var(--white);
+    text-align: center;
+    cursor: pointer;
+    z-index: 1001;
+}
+.arrow-button p {
+    text-align: center;
+    font-size: 1.5rem;
+    animation: arrowBtn 2s infinite ease-in-out;
+}
+
+@keyframes arrowBtn {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
